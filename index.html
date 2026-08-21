@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Oven Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Aamy<span>Bakers</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="tag">FRESH • HOMEMADE • DELICIOUS</p>
+        <h1>Freshly baked,<br><em>made with love.</em></h1>
+        <p>Handcrafted cakes, pastries and treats made fresh every day for every special moment.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#menu">Explore Menu</a>
+          <a class="btn secondary" href="#contact">Order Now</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="cake"> <img src="images/chocolate_cake.jpg" alt="Chocolate Cake">
+        </div>
+        <h3>Today's Special</h3>
+        <p>Chocolate Truffle Cake</p>
+        <strong>₹699</strong>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <p class="tag">OUR MENU</p>
+      <h2>Something sweet for everyone</h2>
+      <p class="section-intro">Choose your favorite treat and make your day a little sweeter.</p>
+
+      <div class="products">
+        <article class="product">
+          <div class="product-icon"> <img src="images/chocolate_cake.jpg" alt="Chocolate Cake">
+          </div>
+          <h3>Chocolate Truffle</h3>
+          <p>Rich chocolate cake with creamy truffle layers.</p>
+          <div class="price">₹699</div>
+          <button onclick="order('Chocolate Truffle Cake')">Order</button>
+        </article>
+
+        <article class="product">
+          <div class="product-icon"> <img src="images/strawberry_cake.jpg" alt="Strawberry Cake"></div>
+          <h3>Strawberry Cake</h3>
+          <p>Soft vanilla sponge with fresh strawberry cream.</p>
+          <div class="price">₹649</div>
+          <button onclick="order('Strawberry Cake')">Order</button>
+        </article>
+
+        <article class="product">
+          <div class="product-icon"> <img src="images/cup-cake.jpg" alt="Cup Cake"></div>
+          <h3>Cupcake Box</h3>
+          <p>A box of six delicious assorted cupcakes.</p>
+          <div class="price">₹399</div>
+          <button onclick="order('Cupcake Box')">Order</button>
+        </article>
+
+        <article class="product">
+          <div class="product-icon">🍪</div>
+          <h3>Choco Cookies</h3>
+          <p>Crunchy cookies packed with chocolate chips.</p>
+          <div class="price">₹199</div>
+          <button onclick="order('Choco Cookies')">Order</button>
+        </article>
+
+        <article class="product">
+          <div class="product-icon">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Golden, flaky and buttery French-style croissants.</p>
+          <div class="price">₹120</div>
+          <button onclick="order('Butter Croissant')">Order</button>
+        </article>
+
+        <article class="product">
+          <div class="product-icon">🍫</div>
+          <h3>Fudge Brownie</h3>
+          <p>Dense, gooey chocolate brownie with a fudgy center.</p>
+          <div class="price">₹149</div>
+          <button onclick="order('Fudge Brownie')">Order</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="tag">ABOUT US</p>
+        <h2>Baked fresh.<br>Served with a smile.</h2>
+        <p>At Sweet Oven Bakery, we believe the best memories start with good food. Every cake, pastry and cookie is prepared with quality ingredients and plenty of care.</p>
+        <p>Perfect for birthdays, celebrations, gifts or simply treating yourself.</p>
+      </div>
+      <div class="about-box">
+        <span>✦</span>
+        <h3>Made fresh every day</h3>
+        <p>No shortcuts. Just delicious baking.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="tag">READY FOR A TREAT?</p>
+      <h2>Let's make your next celebration sweeter.</h2>
+      <a class="btn primary" href="#contact">Get in Touch</a>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="tag">CONTACT</p>
+      <h2>Visit or order from us</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>📍 Location</h3>
+          <p>Kerala, India</p>
+        </div>
+        <div>
+          <h3>📞 Phone</h3>
+          <p>+91 9567425871</p>
+        </div>
+        <div>
+          <h3>🕒 Opening Hours</h3>
+          <p>8:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">Sweet<span>Oven</span></div>
+    <p>© 2026 Sweet Oven Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
